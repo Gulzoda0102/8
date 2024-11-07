@@ -1,0 +1,38 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #efe6e6;
+}
+
+.svetafor {
+    width: 100px;
+    height: 300px;
+    background-color: #0c0c0c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px auto;
+    opacity: 5;
+    animation: gulzoda 2s infinite; 
+}
+
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+
+@keyframes gulzoda {
+    0%, 16.67% { opacity: 2; }
+    16.67%, 33.33% { opacity: 3; } 
+    33.33%, 50% { opacity: 2; } 
+    50%, 66.67% { opacity: 0.3; } 
+    66.67%, 83.33% { opacity: 1; } 
+    83.33%, 100% { opacity: 0.3; } 
+}
